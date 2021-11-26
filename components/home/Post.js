@@ -1,14 +1,16 @@
 import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 
-const Post = () => {
+const Post = ({post}) => {
     return (
         <View>
-            <Text>
-                byrookas 🚀
-            </Text>
+
         </View>
     );
 };
 
 export default Post;
+
+const styles = StyleSheet.create({
+
+})
