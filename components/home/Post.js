@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, Image} from 'react-native';
 import {Divider} from "react-native-elements";
 
 const Post = ({post}) => {
@@ -11,6 +11,16 @@ const Post = ({post}) => {
 };
 
 export default Post;
+
+const PostHeader = ({post}) => (
+    <View>
+        <View>
+            <Image />
+            <Text></Text>
+        </View>
+    </View>
+)
+
 
 const styles = StyleSheet.create({
 
