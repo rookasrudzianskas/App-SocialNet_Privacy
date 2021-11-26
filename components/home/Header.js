@@ -1,10 +1,12 @@
 import React from 'react';
-import {Text, View, StyleSheet, Image} from 'react-native';
+import {Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
 
 const Header = () => {
     return (
         <View>
-            <Image style={styles.logo} source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png'}} />
+            <TouchableOpacity activeOpacity={0.5}>
+                <Image style={styles.logo} source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/5/58/Instagram-Icon.png'}} />
+            </TouchableOpacity>
         </View>
     );
 };
