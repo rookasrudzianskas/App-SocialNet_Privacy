@@ -4,7 +4,7 @@ import {Text, View, StyleSheet} from 'react-native';
 const Header = () => {
     return (
         <View>
-            <Text>
+            <Text style={{color: 'white'}}>
                 byrookas 🚀
             </Text>
         </View>
