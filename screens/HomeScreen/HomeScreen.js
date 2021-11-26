@@ -4,10 +4,17 @@ import Header from "../../components/home/Header";
 
 const HomeScreen = () => {
     return (
-        <SafeAreaView>
+        <SafeAreaView style={styles.container}>
             <Header />
         </SafeAreaView>
     );
 };
 
 export default HomeScreen;
+
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor: 'black',
+        flex: 1,
+    }
+})

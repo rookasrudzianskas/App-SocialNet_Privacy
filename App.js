@@ -7,13 +7,14 @@ export default function App() {
   return (
     <View style={styles.container}>
       <HomeScreen />
-      <StatusBar style="auto" />
+      {/*<StatusBar style="auto" />*/}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-
+      backgroundColor: 'black',
+      flex: 1,
   },
 });
