@@ -4,12 +4,13 @@ import {USERS} from '../../data/stories';
 
 const Stories = () => {
     return (
-        <View>
+        <View style={{marginTop: 15,}}>
             <ScrollView showsHorizontalScrollIndicator={false} horizontal >
                 {USERS.map((story, index) => {
                     return (
-                        <View key={index} style={styles.user}>
+                        <View key={index} style={{justifyContent: 'center', alignItems: 'center', marginHorizontal: 2, }}>
                             <Image style={styles.story} source={{ uri: story.image }} />
+                            <Text style={{color: 'white'}}>{story.user.length > 11 ? story.user.slice(0, 10).toLowerCase() + '...' : story.user.toLowerCase()}</Text>
                         </View>
                     )
                 })}
@@ -21,17 +22,12 @@ const Stories = () => {
 export default Stories;
 
 const styles = StyleSheet.create({
-    user: {
-        marginRight: 10,
-        width: 70,
-        height: 70,
-        borderRadius: 35,
-        overflow: 'hidden',
-        borderWidth: 1,
-        borderColor: '#ddd',
-    },
     story: {
         width: 70,
         height: 70,
+        marginLeft: 6,
+        borderWidth: 3,
+        borderRadius: 50,
+        borderColor: '#ff8501',
     },
 });
