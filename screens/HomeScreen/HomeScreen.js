@@ -8,6 +8,7 @@ const HomeScreen = () => {
         <SafeAreaView style={styles.container}>
             <Header />
             <Stories />
+
         </SafeAreaView>
     );
 };
