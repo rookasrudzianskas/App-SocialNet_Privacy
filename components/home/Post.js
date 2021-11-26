@@ -4,8 +4,8 @@ import {Divider} from "react-native-elements";
 
 const Post = ({post}) => {
     return (
-        <View style={{marginBottom: 30}}>
-            {/*<Divider width={1} orientation={'vertical'} />*/}
+        <View style={{marginTop: 15}}>
+            <Divider width={1} orientation={'vertical'} />
         </View>
     );
 };
