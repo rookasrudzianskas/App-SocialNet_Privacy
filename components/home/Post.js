@@ -24,4 +24,4 @@ const PostHeader = ({post}) => (
 
 const styles = StyleSheet.create({
 
-})
+});
