@@ -26,3 +26,5 @@ const styles = StyleSheet.create({
 
 })
 
+
+// Language: ECMAScript 6
