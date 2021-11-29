@@ -46,9 +46,22 @@ const BottomTabs = ({icons}) => {
 
     return (
         <View>
-            {icons.map((icon) => (
-                <Icon key={icon.name} icon={icon} />
-            ))}
+            <Text style={{color: 'white'}}>Rokas</Text>
+            <Text style={{color: 'white'}}>Rokas</Text>
+            <Text style={{color: 'white'}}>Rokas</Text>
+            <Text style={{color: 'white'}}>Rokas</Text>
+            <Text style={{color: 'white'}}>Rokas</Text>
+            <Text style={{color: 'white'}}>Rokas</Text>
+            <Text style={{color: 'white'}}>Rokas</Text>
+            <Text style={{color: 'white'}}>Rokas</Text>
+            <Text style={{color: 'white'}}>Rokas</Text>
+            <Text style={{color: 'white'}}>Rokas</Text>
+            <Text style={{color: 'white'}}>Rokas</Text>
+            <Text style={{color: 'white'}}>Rokas</Text>
+            {/*{icons.map((icon) => (*/}
+            {/*    <Text style={{color: 'white'}}>Rokas</Text>*/}
+            {/*    // <Icon key={icon.name} icon={icon} />*/}
+            {/*))}*/}
         </View>
     );
 };
@@ -57,7 +70,7 @@ export default BottomTabs;
 
 const styles = StyleSheet.create({
     icon: {
-        width: 50,
-        height: 50,
+        width: 30,
+        height: 30,
     },
 });
