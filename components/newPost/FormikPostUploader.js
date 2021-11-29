@@ -12,7 +12,7 @@ const FormikPostUploader = () => {
         imageUrl: yup.string().url().required('A URL is required'),
         caption: yup.string().max(2200, 'A caption has reached the character limit.'),
 
-    })
+    });
 
     return (
         <View>
