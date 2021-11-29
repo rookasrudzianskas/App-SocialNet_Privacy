@@ -15,7 +15,11 @@ export const POSTS = [
             {
                 user: 'rokas.dev',
                 comment: 'I\'m not sure if this is real, but I\'m pretty sure it is.',
-            }
+            },
+            {
+                user: 'rokas.dev',
+                comment: 'I\'m not sure if this is real, but I\'m pretty sure it is.',
+            },
         ],
     },
     {

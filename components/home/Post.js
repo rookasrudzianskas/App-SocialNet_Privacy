@@ -52,6 +52,9 @@ const PostFooter = ({post}) => (
         <Likes post={post} />
         <View style={{marginHorizontal: 12,}}>
             <Caption post={post} />
+            <View style={{marginTop: 5,}}>
+                <CommentsSection post={post} />
+            </View>
         </View>
     </Pressable>
 );
@@ -92,6 +95,12 @@ const Caption = ({post}) => (
             <Text> {post.caption}</Text>
         </Text>
 
+    </View>
+);
+
+const CommentsSection = ({post}) => (
+    <View>
+        <Text style={{color: 'gray'}}>View {post.comments.length > 1 ? 'all' : ''} {post.comments.length > 1 ? 'comments' : 'comment'}</Text>
     </View>
 );
 
