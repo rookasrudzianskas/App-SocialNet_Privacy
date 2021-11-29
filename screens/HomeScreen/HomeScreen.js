@@ -11,7 +11,7 @@ const HomeScreen = () => {
         <SafeAreaView style={styles.container}>
             <Header />
             <Stories />
-            <ScrollView>
+            <ScrollView style={{height: '100%'}}>
             {/*<FlatList key={POSTS.imageUrl}  data={POSTS} renderItem={({item, index}) => (*/}
             {/*    <Post post={item}/>*/}
             {/*)}/>*/}
