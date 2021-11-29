@@ -5,6 +5,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
+import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 
 //<AntDesign name="like2" size={24} color="black" />
 //<FontAwesome5 name="comment-alt" size={24} color="black" />
@@ -46,22 +47,30 @@ const PostImage = ({post}) => (
 );
 
 const PostFooter = ({post}) => (
-    <TouchableOpacity activeOpacity={0.5} style={{}}>
+    <Pressable style={{}}>
         <Icon />
-    </TouchableOpacity>
+    </Pressable>
 );
 
 const Icon = () => (
-    <View style={{flexDirection: 'row', justifyContent: 'space-between', margin: 10, alignItems: 'center'}}>
-        <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <AntDesign name="like2" size={24} color="white" style={{margin: 5,}}/>
-            <FontAwesome5 name="comment-alt" size={24} color="white" style={{margin: 5,}}/>
-            <Feather name="share" size={24} color="white" style={{margin: 5,}}/>
+        <View style={{flexDirection: 'row', justifyContent: 'space-between', margin: 10, alignItems: 'center'}}>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                    <TouchableOpacity>
+                <AntDesign name="like2" size={22} color="white" style={{margin: 5,}}/>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                <FontAwesome5 name="comment-alt" size={22} color="white" style={{margin: 5,}}/>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                <Feather name="share" size={22} color="white" style={{margin: 5,}}/>
+                    </TouchableOpacity>
+            </View>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                    <TouchableOpacity>
+                <MaterialIcons name="save-alt" size={22} color="white" />
+                    </TouchableOpacity>
+            </View>
         </View>
-        <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <MaterialIcons name="save-alt" size={24} color="white" />
-        </View>
-    </View>
 );
 
 
