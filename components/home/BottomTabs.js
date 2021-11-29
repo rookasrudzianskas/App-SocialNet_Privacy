@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import {Divider} from "react-native-elements";
 
 
 export const bottomTabIcons = [
@@ -45,11 +46,14 @@ const BottomTabs = ({icons}) => {
     );
 
     return (
-        <View style={styles.container}>
-            {icons.map((icon) => (
-                // <Text style={{color: 'white'}}>Rokas</Text>
-                <Icon key={icon.name} icon={icon} />
-            ))}
+        <View>
+            <Divider width={1} orientation={'vertical'} />
+            <View style={styles.container}>
+                {icons.map((icon) => (
+                    // <Text style={{color: 'white'}}>Rokas</Text>
+                    <Icon key={icon.name} icon={icon} />
+                ))}
+            </View>
         </View>
     );
 };
@@ -57,6 +61,9 @@ const BottomTabs = ({icons}) => {
 export default BottomTabs;
 
 const styles = StyleSheet.create({
+    wrapper: {
+
+    },
     icon: {
         width: 30,
         height: 30,
@@ -64,5 +71,7 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         justifyContent: 'space-around',
+        height: 50,
+        paddingTop: 10,
     }
 });
