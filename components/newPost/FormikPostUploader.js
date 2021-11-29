@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, Image, TextInput} from 'react-native';
 import 'core-js/es6/promise';
 import 'core-js/es6/set';
 import 'core-js/es6/map';
@@ -25,7 +25,13 @@ const FormikPostUploader = () => {
         >
 
             {({handleBlur, handleChange, handleSubmit, values, errors, isValid}) => (
+                <>
+                    <View>
+                        <Image />
+                    </View>
 
+                    <TextInput />
+                </>
                 )}
 
         {/*    caption and url    */}
