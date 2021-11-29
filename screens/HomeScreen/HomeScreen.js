@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet, SafeAreaView, ScrollView} from 'react-native';
+import {Text, View, StyleSheet, SafeAreaView, ScrollView, FlatList} from 'react-native';
 import Header from "../../components/home/Header";
 import Stories from "../../components/home/Stories";
 import Post from "../../components/home/Post";
@@ -12,6 +12,9 @@ const HomeScreen = () => {
             <Header />
             <Stories />
             <ScrollView>
+            {/*<FlatList key={POSTS.imageUrl}  data={POSTS} renderItem={({item, index}) => (*/}
+            {/*    <Post post={item}/>*/}
+            {/*)}/>*/}
                 {POSTS.map((post, index) => {
                     return <Post key={index} post={post} />
                 })}

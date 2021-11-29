@@ -2,7 +2,7 @@ import {USERS} from "./stories";
 
 export const POSTS = [
     {
-        image: 'https://cdn.truelancer.com/user-picture/562992-5b86c26e23727.jpg',
+        imageUrl: 'https://cdn.truelancer.com/user-picture/562992-5b86c26e23727.jpg',
         user: USERS[0].user,
         likes: 5454,
         caption: 'Train to ride to Hogwarts 🌓',
@@ -19,7 +19,7 @@ export const POSTS = [
         ],
     },
     {
-        image: 'https://about.me/cdn-cgi/image/q=80,dpr=1,f=auto,fit=cover,w=1200,h=630,gravity=0.474x0.27/https://assets.about.me/background/users/r/o/o/rookas_1585854606_159.jpg',
+        imageUrl: 'https://about.me/cdn-cgi/image/q=80,dpr=1,f=auto,fit=cover,w=1200,h=630,gravity=0.474x0.27/https://assets.about.me/background/users/r/o/o/rookas_1585854606_159.jpg',
         user: USERS[1].user,
         likes: 5323,
         caption: 'Car to ride to Hogwarts 🌓',

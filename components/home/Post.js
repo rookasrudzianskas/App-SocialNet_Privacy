@@ -7,6 +7,7 @@ const Post = ({post}) => {
         <View style={{marginTop: 15}}>
             <Divider width={1} orientation={'vertical'} />
             <PostHeader post={post} />
+            <PostImage post={post} />
         </View>
     );
 };
@@ -24,8 +25,13 @@ const PostHeader = ({post}) => (
             <Text style={{color: 'white', fontWeight: '900', marginRight: 5}}>...</Text>
         </View>
 
+
     </View>
-)
+);
+
+const PostImage = ({post}) => (
+        <Image source={{ uri: post.imageUrl }} style={{height: '100%', resizeMode: 'cover'}} />
+);
 
 
 const styles = StyleSheet.create({
@@ -36,5 +42,10 @@ const styles = StyleSheet.create({
         marginRight: 10,
         borderWidth: 1.6,
         borderColor: '#ff8501',
+    },
+    image: {
+        width: '100%',
+        height: 200,
+        borderRadius: 10,
     }
 });
