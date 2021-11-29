@@ -55,18 +55,18 @@ const PostFooter = ({post}) => (
 const Icon = () => (
         <View style={{flexDirection: 'row', justifyContent: 'space-between', margin: 10, alignItems: 'center'}}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                    <TouchableOpacity>
+                    <TouchableOpacity activeOpacity={0.5}>
                 <AntDesign name="like2" size={22} color="white" style={{margin: 5,}}/>
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity activeOpacity={0.5}>
                 <FontAwesome5 name="comment-alt" size={22} color="white" style={{margin: 5,}}/>
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity activeOpacity={0.5}>
                 <Feather name="share" size={22} color="white" style={{margin: 5,}}/>
                     </TouchableOpacity>
             </View>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                    <TouchableOpacity>
+                    <TouchableOpacity activeOpacity={0.5}>
                 <MaterialIcons name="save-alt" size={22} color="white" />
                     </TouchableOpacity>
             </View>
