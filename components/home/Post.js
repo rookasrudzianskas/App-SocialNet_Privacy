@@ -19,6 +19,11 @@ const PostHeader = ({post}) => (
             <Image source={{ uri: post.profile_picture }} style={styles.story} />
             <Text style={{color: 'white', marginLeft: 5, fontWeight: '700'}}>{post?.user}</Text>
         </View>
+
+        <View>
+            <Text style={{color: 'white', fontWeight: '900', marginRight: 5}}>...</Text>
+        </View>
+
     </View>
 )
 
