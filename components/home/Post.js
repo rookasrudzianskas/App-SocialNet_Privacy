@@ -49,6 +49,7 @@ const PostImage = ({post}) => (
 const PostFooter = ({post}) => (
     <Pressable style={{}}>
         <Icon />
+        <Likes post={post} />
     </Pressable>
 );
 
@@ -72,6 +73,12 @@ const Icon = () => (
             </View>
         </View>
 );
+
+const Likes = ({post}) => (
+    <View style={{marginTop: -10}}>
+        <Text style={{color: 'white', fontWeight: '600', marginLeft: 13}}>{post.likes.toLocaleString('en')} likes</Text>
+    </View>
+)
 
 
 const styles = StyleSheet.create({
