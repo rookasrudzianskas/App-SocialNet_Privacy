@@ -5,7 +5,7 @@ export const POSTS = [
         imageUrl: 'https://cdn.truelancer.com/user-picture/562992-5b86c26e23727.jpg',
         user: USERS[0].user,
         likes: 5454,
-        caption: 'Train to ride to Hogwarts 🌓',
+        caption: 'Train to ride to Hogwarts 🌓, Train to ride to Hogwarts 🌓, Train to ride to Hogwarts 🌓, Train to ride to Hogwarts 🌓, Train to ride to Hogwarts 🌓',
         profile_picture: USERS[0].image,
         comments: [
             {

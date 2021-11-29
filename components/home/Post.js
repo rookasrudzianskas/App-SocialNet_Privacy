@@ -82,10 +82,12 @@ const Likes = ({post}) => (
 );
 
 const Caption = ({post}) => (
-    <View style={{marginTop: 10, flexDirection: 'row'}}>
-            <Text style={{color: 'white', marginLeft: 13, marginRight: 6, fontWeight: '600'}}>{post.user}</Text>
+    <View style={{marginTop: 10}}>
+        <Text style={{ marginLeft: 13, marginRight: 13,}}>
+            <Text style={{color: 'white', fontWeight: '600', marginLeft: 10, }}>{post.user}</Text>
             <Text style={{color: 'white', fontWeight: '400'}}>
             {post.caption}</Text>
+        </Text>
     </View>
 );
 
