@@ -13,13 +13,13 @@ const HomeScreen = () => {
         <SafeAreaView style={styles.container}>
             <Header />
             <Stories />
-            <ScrollView showsVerticalScrollIndicator={false} style={{marginBottom: 180}}>
+            <ScrollView showsVerticalScrollIndicator={false} style={{marginBottom: 140}}>
                 {POSTS.map((post, index) => {
                     return <Post key={index} post={post} />
                 })}
+            <BottomTabs icons={bottomTabIcons} />
             </ScrollView>
 
-            <BottomTabs icons={bottomTabIcons} />
         </SafeAreaView>
     );
 };

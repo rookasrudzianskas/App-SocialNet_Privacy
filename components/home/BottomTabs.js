@@ -45,23 +45,11 @@ const BottomTabs = ({icons}) => {
     );
 
     return (
-        <View>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            <Text style={{color: 'white'}}>Rokas</Text>
-            {/*{icons.map((icon) => (*/}
-            {/*    <Text style={{color: 'white'}}>Rokas</Text>*/}
-            {/*    // <Icon key={icon.name} icon={icon} />*/}
-            {/*))}*/}
+        <View style={styles.container}>
+            {icons.map((icon) => (
+                // <Text style={{color: 'white'}}>Rokas</Text>
+                <Icon key={icon.name} icon={icon} />
+            ))}
         </View>
     );
 };
@@ -73,4 +61,8 @@ const styles = StyleSheet.create({
         width: 30,
         height: 30,
     },
+    container: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+    }
 });
