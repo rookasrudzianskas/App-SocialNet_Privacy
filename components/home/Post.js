@@ -50,6 +50,7 @@ const PostFooter = ({post}) => (
     <Pressable style={{}}>
         <Icon />
         <Likes post={post} />
+        <Caption post={post} />
     </Pressable>
 );
 
@@ -78,7 +79,15 @@ const Likes = ({post}) => (
     <View style={{marginTop: -10}}>
         <Text style={{color: 'white', fontWeight: '600', marginLeft: 13}}>{post.likes.toLocaleString('en')} likes</Text>
     </View>
-)
+);
+
+const Caption = ({post}) => (
+    <View style={{marginTop: 10, flexDirection: 'row'}}>
+            <Text style={{color: 'white', marginLeft: 13, marginRight: 6, fontWeight: '600'}}>{post.user}</Text>
+            <Text style={{color: 'white', fontWeight: '400'}}>
+            {post.caption}</Text>
+    </View>
+);
 
 
 const styles = StyleSheet.create({
