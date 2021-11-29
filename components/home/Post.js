@@ -1,6 +1,15 @@
 import React from 'react';
 import {Text, View, StyleSheet, Image} from 'react-native';
 import {Divider} from "react-native-elements";
+import { AntDesign } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
+
+//<AntDesign name="like2" size={24} color="black" />
+//<FontAwesome5 name="comment-alt" size={24} color="black" />
+// <Feather name="share" size={24} color="black" />
+//<MaterialIcons name="save-alt" size={24} color="black" />
 
 const Post = ({post}) => {
     return (
@@ -30,7 +39,9 @@ const PostHeader = ({post}) => (
 );
 
 const PostImage = ({post}) => (
+    <View style={{width: '100%', height: 450,}}>
         <Image source={{ uri: post.imageUrl }} style={{height: '100%', resizeMode: 'cover'}} />
+    </View>
 );
 
 

@@ -11,10 +11,7 @@ const HomeScreen = () => {
         <SafeAreaView style={styles.container}>
             <Header />
             <Stories />
-            <ScrollView style={{height: '100%'}}>
-            {/*<FlatList key={POSTS.imageUrl}  data={POSTS} renderItem={({item, index}) => (*/}
-            {/*    <Post post={item}/>*/}
-            {/*)}/>*/}
+            <ScrollView showsVerticalScrollIndicator={false} style={{marginBottom: 180}}>
                 {POSTS.map((post, index) => {
                     return <Post key={index} post={post} />
                 })}
