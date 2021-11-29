@@ -81,9 +81,9 @@ const styles = StyleSheet.create({
         height: 50,
         paddingTop: 10,
     },
-    profilePic: {
+    profilePic: (active = '') => ({
         borderRadius: 50,
         borderColor: 'white',
-
-    }
+        borderWidth: active === 'Profile' ? 2 : 0,
+    })
 });
