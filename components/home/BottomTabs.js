@@ -41,7 +41,7 @@ const BottomTabs = ({icons}) => {
 
     const Icon = ({icon}) => (
       <TouchableOpacity onPress={() => setActiveTab(icon.name)}>
-          <Image source={{uri: activeTab === icon.name ? icon.active : icon.inactive }} style={styles.icon} />
+          <Image source={{uri: activeTab === icon.name ? icon.active : icon.inactive }} style={[styles.icon, icon.name === 'Profile' ? styles.profilePic : null]} />
       </TouchableOpacity>
     );
 
@@ -80,5 +80,10 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         height: 50,
         paddingTop: 10,
+    },
+    profilePic: {
+        borderRadius: 50,
+        borderColor: 'white',
+
     }
 });
