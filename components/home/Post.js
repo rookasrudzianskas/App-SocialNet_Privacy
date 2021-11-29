@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet, Image} from 'react-native';
+import {Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import {Divider} from "react-native-elements";
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
@@ -17,6 +17,7 @@ const Post = ({post}) => {
             <Divider width={1} orientation={'vertical'} />
             <PostHeader post={post} />
             <PostImage post={post} />
+            <PostFooter post={post} />
         </View>
     );
 };
@@ -44,11 +45,24 @@ const PostImage = ({post}) => (
     </View>
 );
 
-const PostFooter = () => (
-    <View style={{}}>
+const PostFooter = ({post}) => (
+    <TouchableOpacity activeOpacity={0.5} style={{}}>
+        <Icon />
+    </TouchableOpacity>
+);
 
+const Icon = () => (
+    <View style={{flexDirection: 'row', justifyContent: 'space-between', margin: 10, alignItems: 'center'}}>
+        <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <AntDesign name="like2" size={24} color="white" style={{margin: 5,}}/>
+            <FontAwesome5 name="comment-alt" size={24} color="white" style={{margin: 5,}}/>
+            <Feather name="share" size={24} color="white" style={{margin: 5,}}/>
+        </View>
+        <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <MaterialIcons name="save-alt" size={24} color="white" />
+        </View>
     </View>
-)
+);
 
 
 const styles = StyleSheet.create({
