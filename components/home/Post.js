@@ -100,8 +100,8 @@ const Caption = ({post}) => (
 
 const CommentsSection = ({post}) => (
     <View>
-        {post.comments.length && (
-            <Text style={{color: 'gray'}}>View {post.comments.length > 1 ? 'all' : ''} {post.comments.length > 1 ? 'comments' : 'comment'}</Text>
+        {!!post.comments.length && (
+            <Text style={{color: 'gray'}}>View {post.comments.length > 1 ? 'all' : ''} {post?.comments?.length} {post.comments.length > 1 ? 'comments' : 'comment'}</Text>
         )}
     </View>
 );
