@@ -18,6 +18,7 @@ const Header = () => (
         <Text style={styles.headerText}>
             New Post 🚀
         </Text>
+        <Text></Text>
     </View>
 )
 
@@ -36,6 +37,6 @@ const styles = StyleSheet.create({
         color: 'white',
         fontWeight: '700',
         fontSize: 20,
-        marginRight: 25,
+        marginRight: 23,
     },
 });
