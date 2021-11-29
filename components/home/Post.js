@@ -55,6 +55,7 @@ const PostFooter = ({post}) => (
             <View style={{marginTop: 5,}}>
                 <CommentsSection post={post} />
             </View>
+            <Comments post={post} />
         </View>
     </Pressable>
 );
@@ -105,6 +106,22 @@ const CommentsSection = ({post}) => (
         )}
     </View>
 );
+
+const Comments = ({post}) => (
+    <>
+        {post.comments.map((comment, i) => (
+            <View key={i} style={{marginTop: 5}}>
+                <Text style={{color: 'white'}}>
+                    <Text style={{fontWeight: '600'}}>
+                        {comment?.user}
+                    </Text>
+                    <Text> {comment?.comment}</Text>
+                </Text>
+
+            </View>
+        ))}
+    </>
+)
 
 
 const styles = StyleSheet.create({
