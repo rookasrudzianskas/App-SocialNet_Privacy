@@ -50,7 +50,9 @@ const PostFooter = ({post}) => (
     <Pressable style={{}}>
         <Icon />
         <Likes post={post} />
-        <Caption post={post} />
+        <View style={{marginHorizontal: 12,}}>
+            <Caption post={post} />
+        </View>
     </Pressable>
 );
 
@@ -82,16 +84,14 @@ const Likes = ({post}) => (
 );
 
 const Caption = ({post}) => (
-    <View style={{marginTop: 10}}>
-        <Text style={{ marginLeft: 13, marginRight: 1,}}>
-            <View style={{margin: 0}}>
-                <Text style={{color: 'white', fontWeight: '600'}}>{post.user}</Text>
-            </View>
-            <View style={{margin: 0}}>
-            <Text style={{color: 'white', fontWeight: '400'}}>
-            {post.caption}</Text>
-            </View>
+    <View style={{marginTop: 5}}>
+        <Text style={{color: 'white'}}>
+            <Text style={{fontWeight: '600'}}>
+                {post.user}
+            </Text>
+            <Text> {post.caption}</Text>
         </Text>
+
     </View>
 );
 
