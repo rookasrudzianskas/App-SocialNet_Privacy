@@ -12,3 +12,9 @@ const AddNewPost = () => {
 };
 
 export default AddNewPost;
+
+const styles = StyleSheet.create({
+    container: {
+
+    }
+});
