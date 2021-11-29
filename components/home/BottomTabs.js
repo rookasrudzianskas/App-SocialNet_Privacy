@@ -46,7 +46,8 @@ const BottomTabs = ({icons}) => {
     );
 
     return (
-        <View style={styles.wrapper}>
+        // <View style={styles.wrapper}>
+        <>
             <Divider width={1} orientation={'vertical'} />
             <View style={styles.container}>
                 {icons.map((icon) => (
@@ -54,7 +55,8 @@ const BottomTabs = ({icons}) => {
                     <Icon key={icon.name} icon={icon} />
                 ))}
             </View>
-        </View>
+        {/*// </View>*/}
+</>
     );
 };
 
