@@ -44,6 +44,12 @@ const PostImage = ({post}) => (
     </View>
 );
 
+const PostFooter = () => (
+    <View style={{}}>
+
+    </View>
+)
+
 
 const styles = StyleSheet.create({
     story: {
