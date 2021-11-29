@@ -18,7 +18,15 @@ const FormikPostUploader = () => {
     const [thumbnailUrl, setThumbnailUrl] = useState(PLACEHOLDER_IMG);
 
     return (
-        <Formik>
+        <Formik
+            initialValues={{caption: '', imageUrl: ''}}
+            onSubmit={(values) => console.log(values)}
+            validationSchema={uploadPostSchema}
+        >
+
+            {({handleBlur, handleChange, handleSubmit, values, errors, isValid}) => (
+
+                )}
 
         {/*    caption and url    */}
         </Formik>
