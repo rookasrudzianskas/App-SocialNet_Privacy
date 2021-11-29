@@ -46,8 +46,8 @@ const BottomTabs = ({icons}) => {
     );
 
     return (
-        // <View style={styles.wrapper}>
         <>
+        <View style={styles.wrapper}>
             <Divider width={1} orientation={'vertical'} />
             <View style={styles.container}>
                 {icons.map((icon) => (
@@ -55,7 +55,7 @@ const BottomTabs = ({icons}) => {
                     <Icon key={icon.name} icon={icon} />
                 ))}
             </View>
-        {/*// </View>*/}
+         </View>
 </>
     );
 };
@@ -64,9 +64,10 @@ export default BottomTabs;
 
 const styles = StyleSheet.create({
     wrapper: {
+        marginTop: 10,
         // position: 'absolute',
         // width: '100%',
-        // bottom: '3%',
+        // bottom: 0,
         // zIndex: 999,
         // backgroundColor: '#000',
     },
