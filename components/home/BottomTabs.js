@@ -62,7 +62,11 @@ export default BottomTabs;
 
 const styles = StyleSheet.create({
     wrapper: {
-
+        // position: 'absolute',
+        // width: '100%',
+        // bottom: '3%',
+        // zIndex: 999,
+        // backgroundColor: '#000',
     },
     icon: {
         width: 30,

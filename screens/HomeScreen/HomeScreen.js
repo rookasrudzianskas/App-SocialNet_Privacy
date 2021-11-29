@@ -17,8 +17,8 @@ const HomeScreen = () => {
                 {POSTS.map((post, index) => {
                     return <Post key={index} post={post} />
                 })}
-            <BottomTabs icons={bottomTabIcons} />
             </ScrollView>
+            <BottomTabs icons={bottomTabIcons} />
 
         </SafeAreaView>
     );
